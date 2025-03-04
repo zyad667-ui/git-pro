@@ -2,3 +2,9 @@
 padding:0;
 margin:0;
 }
+.grand-p-sect-2{
+    display: flex;justify-content: center;justify-items: center;
+}
+.spirit-h1{
+    color: blue;font-size: large;
+}
