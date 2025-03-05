@@ -27,7 +27,7 @@ nav > a {
   border: none;
   box-shadow: 0px 0px 2px black;
 }
-.section_one {
+.section_one_info {
   display: flex;
   justify-content: center;
   align-items: center;
