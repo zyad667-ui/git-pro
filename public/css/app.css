@@ -36,7 +36,7 @@ nav>a {
   justify-content: space-around;
   align-items: center;
   gap: 1rem;
-  padding-inline: 5rem
+  padding-inline: 5rem;
 }
 .section_one_info {
   width: 40vw;
@@ -91,11 +91,13 @@ nav>a {
   padding-top: 2rem;
 
 }
-.box{
+.box_container{
+
   display: flex;
-  flex-direction: column;
   gap: 1rem;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.389);
+}
+.box{
+  box-shadow: 0px 0px 6px #00000063;
   padding: 2rem;
   width: 15vw;
 }
@@ -157,8 +159,10 @@ nav>a {
 
 .footer {
     background-color: #314584;
+    color: white;
     justify-items: center;
-    height: 30vh;
+    align-items: center;
+    height: fit-content;
     padding-top: 6vh;
 }
 
@@ -171,8 +175,67 @@ nav>a {
 .logo {
     display: flex;
     gap: 10px;
+    padding-bottom: 2rem;
 }
 
 .footer-h1 {
     color: blue;
+}
+@media (max-width:900px) {
+  nav{
+    display: none;
+  }
+  .section_one{
+    flex-direction: column;
+  }
+  .section_one_info, .section_one_img{
+    width: 70vw;
+  }
+  .section_one_info> h1 {
+   
+    font-size: 50px;
+    
+  }
+  .section_one_btns, .box_container, .section_two, .pages{
+    flex-direction: column;
+  }
+  .box{
+    width: 70vw;
+  }
+  .anything{
+    
+    text-align: center;
+    width: 70vw;
+
+  }
+  .input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+  }
+  .email, .subject{
+    width: 70vw;
+   
+  
+  }
+  
+  .msg{
+    width: 70vw;
+    margin: 0;
+  }
+  .section_three_info{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0;
+
+  }
+  .pages{
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  
+  
 }
